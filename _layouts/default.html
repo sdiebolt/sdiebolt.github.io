@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    <script src="https://kit.fontawesome.com/930886d376.js" crossorigin="anonymous"></script>
+    {% seo %}
+  </head>
+  <body>
+    <div class="container-lg">
+    {% include navbar.html %}
+    <div class="mt-4">
+    {{ content }}
+    </div>
+    {% include footer.html %}
+    </div>
+  </body>
+</html>

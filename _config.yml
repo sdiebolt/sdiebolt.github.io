@@ -1,0 +1,15 @@
+title: "Samuel Diebolt" # the name of your site, e.g. ACME Corp.
+tagline: "A blog about bioinformatics"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter:
+  username: SamuelDiebolt
+  card: summary
+
+sass:
+  sass_dir: assets/css
+
+plugins:
+  - jekyll-autoprefixer
+  - jekyll-seo-tag
+  - jekyll-sitemap
