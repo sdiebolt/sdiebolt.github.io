@@ -1,0 +1,25 @@
+---
+layout: default
+title: Blog
+---
+
+<div class="blog-container">
+  <h1 class="display-5 mb-4">Blog</h1>
+  
+  <p class="lead">Occasional thoughts on neuroscience, imaging, and open science.</p>
+
+  <div class="blog-posts">
+    {% for post in site.posts %}
+      <article class="blog-post-preview mb-5">
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p class="text-muted">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+        <a href="{{ post.url | relative_url }}" class="btn btn-outline-light btn-sm">Read more</a>
+      </article>
+    {% endfor %}
+
+    {% if site.posts.size == 0 %}
+      <p class="text-muted">No posts yet. Check back soon!</p>
+    {% endif %}
+  </div>
+</div>

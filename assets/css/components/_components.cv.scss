@@ -1,0 +1,27 @@
+.cv-container {
+  max-width: 900px;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.cv-entry {
+  margin-bottom: 2rem;
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+}

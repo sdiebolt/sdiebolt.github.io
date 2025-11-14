@@ -1,15 +1,18 @@
-title: "Samuel Diebolt" # the name of your site, e.g. ACME Corp.
-tagline: "A blog about bioinformatics"
+title: "Samuel Le Meur-Diebolt" # the name of your site, e.g. ACME Corp.
+tagline: "Research Fellow in Systems Neuroscience"
+description: "Personal website of Dr. Samuel Le Meur-Diebolt, Research Fellow at UCL, specializing in functional ultrasound imaging for neuroscience"
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter:
   username: SamuelDiebolt
   card: summary
+author:
+  name: Samuel Le Meur-Diebolt
+  email: s.le-meur-diebolt@ucl.ac.uk
 
 sass:
   sass_dir: assets/css
 
 plugins:
-  - jekyll-autoprefixer
   - jekyll-seo-tag
   - jekyll-sitemap
