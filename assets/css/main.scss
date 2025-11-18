@@ -4,14 +4,111 @@
 $body-bg: black !default;
 $body-color: #bbb !default;
 
-$link-decoration: none;
-$dark: black !default;
+body {
+  background: $body-bg;
+  color: $body-color;
+}
 
-// Bootstrap
-@import "bootstrap/bootstrap";
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+// Navbar customization
+.navbar-dark {
+  background-color: black !important;
+}
 
-// Components
-@import "components/components.pageintro.scss";
-@import "components/components.cv.scss";
-@import "components/components.blog.scss";
+.navbar-dark .navbar-brand h2,
+.navbar-dark .navbar-brand h2 strong {
+  color: #fff !important;
+}
+
+// Page intro component
+.c-pageintro {
+  max-width: 720px;
+}
+
+// CV component
+.cv-container {
+  max-width: 900px;
+}
+
+.cv-section {
+  margin-bottom: 2.5rem;
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.cv-entry {
+  margin-bottom: 2rem;
+  
+  h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Blog component
+.blog-container {
+  max-width: 900px;
+}
+
+.blog-post-preview {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  
+  h2 {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+}
+
+.blog-post {
+  max-width: 800px;
+  
+  .post-content {
+    line-height: 1.8;
+    
+    h2, h3, h4 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1.5rem 0;
+    }
+    
+    code {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+    }
+    
+    pre {
+      background-color: rgba(255, 255, 255, 0.05);
+      padding: 1rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+  }
+}
